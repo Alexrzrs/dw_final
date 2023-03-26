@@ -1,0 +1,38 @@
+.notfound-container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.cookiemnstr {
+    height: 270px;
+    width: 270px;
+}
+.number4 {
+    height: 250px;
+    width: 250px;
+}
+
+.vanta {
+    color: "white";
+    height: auto;
+}
+h1 {
+    color: white;
+}
+p {
+    color: white;
+}
+
+@media (max-width: 770px) {
+    .cookiemnstr {
+        height: 150px;
+        width: 150px;
+    }
+    .number4 {
+        height: 130px;
+        width: 130px;
+    }
+}
