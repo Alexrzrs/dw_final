@@ -5,6 +5,7 @@ import Layout from "@containers/Layout";
 import NoEncontrado from "@pages/NoEncontrado";
 import "@styles/Global.css";
 import "@styles/App.css";
+import Contacto from '@pages/Contacto';
 
 import AppContext from "@context/AppContext";
 
@@ -17,6 +18,7 @@ const App = () => {
                     {/* <Route path="/login" element={<Login />} /> */}
                     {/* <Route path="/home" element={<Home />} /> */}
                     {/* <Route path="*" element={<NoEncontrado />} /> */}
+                    <Route path="/contacto" element={<Contacto/>} />
                 </Routes>
             </Layout>
         </BrowserRouter>
