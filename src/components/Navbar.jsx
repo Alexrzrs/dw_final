@@ -3,11 +3,13 @@ import { GiHamburgerMenu, GiSpaceSuit } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
 import "@styles/Navbar.scss";
 import rickandmorty from "@assets/rickandmorty.png";
+import { useNavigate } from 'react-router-dom';
+
 
 const Navbar = () => {
     //para hacer dinamico el menu
     const [toggleMenu, setToggleMenu] = useState(false);
-
+    const navigation = useNavigate();
     return (
         <nav className="app__navbar">
             <div className="app__navbar-logo">
@@ -30,7 +32,8 @@ const Navbar = () => {
             </ul>
 
             <div className="app__navbar-login">
-                <a href="#login" className="p__opensans">
+                <a href="#login" className="p__opensans" onClick={
+                  ()=> navigation('/buzon_no/')}>
                     Buzon de Noticias
                 </a>
                 <div />
