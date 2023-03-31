@@ -53,7 +53,7 @@ const CharacterCard = ({ char }) => {
                 <p>Estatus: {charStatus(char.status)}</p>
                 <p>Raza: {char.species}</p>
                 <p>Género: {charGender(char.gender)}</p>
-                <p>Órigen: {char.origin.name}</p>
+                <p>Origen: {char.origin.name}</p>
                 <p>Última ubicación: {char.location.name}</p>
                 <p>Debut: {debut}</p>
             </div>
