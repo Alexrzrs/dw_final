@@ -1,4 +1,5 @@
 body {
     margin: 0;
     font-family: "Cormorant Upright", serif;
+    background-image: url('./../assets/bg.png');
 }
