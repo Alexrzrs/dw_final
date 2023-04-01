@@ -50,10 +50,12 @@
 
 .app__wrapper_img img {
     width: 80%;
+    border-radius: 10%;
+    box-shadow: 0 0 50px 15px var(--color-golden);
 }
 
 .custom__button {
-    background-color: var(--color-crimson);
+    background-color: var(--color-golden);
     color: var(--color-black);
     font-family: var(--font-base);
     font-weight: 700;

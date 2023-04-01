@@ -3,8 +3,7 @@ import { GiHamburgerMenu, GiSpaceSuit } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
 import "@styles/Navbar.scss";
 import rickandmorty from "@assets/rickandmorty.png";
-import { useNavigate, Link} from 'react-router-dom';
-
+import { useNavigate, Link } from "react-router-dom";
 
 const Navbar = () => {
     //para hacer dinamico el menu
@@ -18,13 +17,13 @@ const Navbar = () => {
 
             <ul className="app__navbar-links">
                 <li className="p__opensans">
-                    <a href="#Home">Inicio</a>
+                    <Link to="/">Inicio</Link>
                 </li>
                 <li className="p__opensans">
-                    <a href="#about">Acerca de</a>
+                    <Link to="acerca_de">Acerca de</Link>
                 </li>
                 <li className="p__opensans">
-                    <Link to="personajes" >Personajes</Link>
+                    <Link to="personajes">Personajes</Link>
                 </li>
                 <li className="p__opensans">
                     <a href="#Contacto">Donde ver</a>
@@ -32,8 +31,10 @@ const Navbar = () => {
             </ul>
 
             <div className="app__navbar-login">
-                <a href="#login" className="p__opensans" onClick={
-                  ()=> navigation('/buzon_no/')}>
+                <a
+                    className="p__opensans"
+                    onClick={() => navigation("/buzon_no")}
+                >
                     Buzon de Noticias
                 </a>
                 <div />
@@ -64,7 +65,7 @@ const Navbar = () => {
                                 <a href="#about">Acerca de</a>
                             </li>
                             <li className="p__opensans">
-                                <Link to="personajes" >Personajes</Link>
+                                <Link to="personajes">Personajes</Link>
                             </li>
                             <li className="p__opensans">
                                 <a href="#Contacto">Donde ver</a>
