@@ -1,4 +1,4 @@
-@import 'vars';
+@import "vars";
 
 .characters {
     margin-top: 20;
@@ -19,12 +19,17 @@
     align-items: center;
 }
 
-.character-controls:nth-child(1) {
+.personajes_navigation {
+    color: var(--color-white);
     cursor: pointer;
 }
 
+.personajes_navigation:hover {
+    color: var(--color-grey);
+}
+
 .character-controls p {
-    color: var(--color-black);
+    color: var(--color-white);
 }
 
 @media (max-width: 640px) {
