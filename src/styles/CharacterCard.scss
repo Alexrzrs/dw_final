@@ -1,0 +1,85 @@
+@import 'vars';
+
+.character-card {
+    border: 0px solid;
+    background-color: var(--color-golden);
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px -1px rgba(0, 0, 0, 0.1);
+    max-height: 150px;
+    transition-duration: 1.5s;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.character-card:hover {
+    max-height: 300px;
+    box-shadow: 10px 10px 0px -1px rgba(0, 0, 0, 0.1);
+}
+
+.character-image {
+    align-self: center;
+    margin-left: 10px;
+    height: 130px;
+    border-style: none;
+    border-radius: 100px;
+    box-shadow: 10px 10px 15px -1px rgba(0, 0, 0, 0.1);
+}
+
+.character-info {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.character-info p {
+    color: var(--color-black);
+    font-family: "Open Sans", sans-serif;
+}
+
+.character-info p:nth-child(1) {
+    font-family: "Cormorant Upright", serif;
+    font-size: 27px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.character-info p:nth-child(n+2) {
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 5px;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 640px) {
+    .character-card {
+        display: block;
+        justify-content: center;
+        padding-top: 10px;
+    }
+
+    .character-image {
+        margin-bottom: 5px;
+    }
+
+    .character-card:hover,
+    .character-card:active {
+        max-height: 400px;
+        box-shadow: 10px 10px 0px -1px rgba(0, 0, 0, 0.1);
+    }
+
+    .character-info p:nth-child(1) {
+        font-family: "Cormorant Upright", serif;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .character-info p:nth-child(n+2) {
+        font-size: 12px;
+        padding-left: 10px;
+        padding-right: 5px;
+        margin-bottom: 5px;
+    }
+}

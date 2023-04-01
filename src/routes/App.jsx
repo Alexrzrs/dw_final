@@ -3,8 +3,10 @@ import "@styles/Global.css";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "@containers/Layout";
 import NoEncontrado from "@pages/NoEncontrado";
+import Personajes from "@pages/Personajes";
 import "@styles/Global.css";
 import "@styles/App.css";
+import BuzonNo from '@pages/BuzonNo';
 
 import AppContext from "@context/AppContext";
 
@@ -13,10 +15,9 @@ const App = () => {
         <BrowserRouter>
             <Layout>
                 <Routes>
-                    {/* <Route path="/" element={<Home />} /> */}
-                    {/* <Route path="/login" element={<Login />} /> */}
-                    {/* <Route path="/home" element={<Home />} /> */}
+                    <Route path="/personajes" element={<Personajes />} />
                     {/* <Route path="*" element={<NoEncontrado />} /> */}
+                    <Route path="/buzon_no" element={<BuzonNo/>} />
                 </Routes>
             </Layout>
         </BrowserRouter>
