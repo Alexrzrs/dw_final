@@ -1,0 +1,81 @@
+@import "vars";
+
+.checkout-title {
+    color: var(--negro-fuerte);
+    font-size: 26px;
+}
+
+.checkout-information {
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.checkout-text-subtotal {
+    flex: 4;
+    
+}
+
+.checkout-text-subtotal p {
+    font-size: 18px;
+    color: var(--negro-fuerte);
+}
+
+.checkout-number-subtotal {
+    flex: 8;
+    text-align: end;
+}
+
+.checkout-number-subtotal p {
+    font-size: 24px;
+    color: var(--negro-fuerte);
+}
+
+.checkout-total-items {
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 5px
+}
+
+.checkout-total-items p{
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    border-radius: 20px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+.text-credits-card {
+    font-size: 16px;
+    color: var(--negro-fuerte);
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.info-credits-card {
+    display: flex;
+    flex-direction: row;
+}
+
+.credit-card {
+    width: 50px;
+    height: 40px;
+    margin-right: 5px;
+}
+
+.checkout-payment-btn {
+    background-color: var(--negro-fuerte);
+    color: var(--color-white);
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 10px;
+    cursor: pointer;
+}

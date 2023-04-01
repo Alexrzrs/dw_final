@@ -7,20 +7,25 @@ import Personajes from "@pages/Personajes";
 import "@styles/Global.css";
 import "@styles/App.css";
 import BuzonNo from '@pages/BuzonNo';
-
+import Reservaciones from "@pages/Reservaciones";
 import AppContext from "@context/AppContext";
+import useStatesGeneral from "../hooks/useStatesGeneral";
 
 const App = () => {
+    const statesGeneral = useStatesGeneral();
     return (
-        <BrowserRouter>
-            <Layout>
-                <Routes>
-                    <Route path="/personajes" element={<Personajes />} />
-                    {/* <Route path="*" element={<NoEncontrado />} /> */}
-                    <Route path="/buzon_no" element={<BuzonNo/>} />
-                </Routes>
-            </Layout>
-        </BrowserRouter>
+        <AppContext.Provider value={statesGeneral}>
+            <BrowserRouter>
+                <Layout>
+                    <Routes>
+                        <Route path="/personajes" element={<Personajes />} />
+                        {/* <Route path="*" element={<NoEncontrado />} /> */}
+                        <Route path="/buzon_no" element={<BuzonNo/>} />
+                        <Route path="/reservaciones" element={<Reservaciones/>} />
+                    </Routes>
+                </Layout>
+            </BrowserRouter>
+        </AppContext.Provider>
     );
 };
 

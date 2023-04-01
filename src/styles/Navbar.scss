@@ -48,6 +48,22 @@
 
     transition: 0.5 ease;
 }
+
+.app-navbar-total-reservations {
+    width: 16px;
+    height: 16px;
+    background-color: var(--color-golden);
+    color: var(--negro-fuerte);
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .app__navbar-login a:hover {
     border-bottom: 1px solid var(--color-golden);
 }

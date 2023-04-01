@@ -1,15 +1,17 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { GiHamburgerMenu, GiSpaceSuit } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
 import "@styles/Navbar.scss";
 import rickandmorty from "@assets/rickandmorty.png";
 import { useNavigate, Link} from 'react-router-dom';
+import AppContex from '@context/AppContext';
 
 
 const Navbar = () => {
     //para hacer dinamico el menu
     const [toggleMenu, setToggleMenu] = useState(false);
     const navigation = useNavigate();
+    const { states } = useContext(AppContex);
     return (
         <nav className="app__navbar">
             <div className="app__navbar-logo">
@@ -37,9 +39,16 @@ const Navbar = () => {
                     Buzon de Noticias
                 </a>
                 <div />
-                <a href="/" className="p__opensans">
-                    Reservar
-                </a>
+                <p className="p__opensans">
+                    <Link to="reservaciones" >Reservaciones</Link>
+                    <strong className="app-navbar-total-reservations">
+                        {
+                            states.reservations.length > 0 ?
+                                states.reservations.length :
+                            0
+                        }
+                    </strong>
+                </p>
             </div>
 
             <div className="app__navbar-smallscreen">
