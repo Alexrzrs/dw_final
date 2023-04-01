@@ -1,6 +1,6 @@
 import React from "react";
 import coverImage from "@assets/rickandmortyline.png";
-import "@styles/SubHeading.scss";
+import "@styles/Subheading.scss";
 
 function SubHeading({ title }) {
     return (
