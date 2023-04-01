@@ -3,6 +3,7 @@ import { GiHamburgerMenu, GiSpaceSuit } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
 import "@styles/Navbar.scss";
 import rickandmorty from "@assets/rickandmorty.png";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     //para hacer dinamico el menu
@@ -22,7 +23,7 @@ const Navbar = () => {
                     <a href="#about">Acerca de</a>
                 </li>
                 <li className="p__opensans">
-                    <a href="#Menu">Personajes</a>
+                    <Link to="personajes" >Personajes</Link>
                 </li>
                 <li className="p__opensans">
                     <a href="#Contacto">Donde ver</a>
@@ -61,7 +62,7 @@ const Navbar = () => {
                                 <a href="#about">Acerca de</a>
                             </li>
                             <li className="p__opensans">
-                                <a href="#Menu">Personajes</a>
+                                <Link to="personajes" >Personajes</Link>
                             </li>
                             <li className="p__opensans">
                                 <a href="#Contacto">Donde ver</a>
