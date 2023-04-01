@@ -57,6 +57,13 @@ const Navbar = () => {
                     fontSize={27}
                     onClick={() => setToggleMenu(true)}
                 />
+                <strong className="app-navbar-smallscreen-total-reservations">
+                    {
+                        states.reservations.length > 0 ?
+                            states.reservations.length :
+                        0
+                    }
+                </strong>
                 {toggleMenu && (
                     <div className="app__navbar-smallscreen_overlay flex__center slide-bottom">
                         <GiSpaceSuit
@@ -77,6 +84,16 @@ const Navbar = () => {
                             </li>
                             <li className="p__opensans">
                                 <a href="#Contacto">Donde ver</a>
+                            </li>
+                            <li className="p__opensans_reservaciones">
+                                <Link to="reservaciones" >Reservaciones</Link>
+                                <strong className="app-navbar-smallscreen_links-total-reservations">
+                                    {
+                                        states.reservations.length > 0 ?
+                                            states.reservations.length :
+                                        0
+                                    }
+                                </strong>
                             </li>
                         </ul>
                     </div>
