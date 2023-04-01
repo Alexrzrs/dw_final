@@ -3,9 +3,8 @@ import { GiHamburgerMenu, GiSpaceSuit } from "react-icons/gi";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
 import "@styles/Navbar.scss";
 import rickandmorty from "@assets/rickandmorty.png";
-import { useNavigate, Link} from 'react-router-dom';
 import AppContex from '@context/AppContext';
-
+import { useNavigate, Link} from 'react-router-dom';
 
 const Navbar = () => {
     //para hacer dinamico el menu
