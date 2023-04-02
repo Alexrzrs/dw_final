@@ -48,6 +48,61 @@
 
     transition: 0.5 ease;
 }
+
+.app-navbar-total-reservations {
+    width: 16px;
+    height: 16px;
+    background-color: var(--color-golden);
+    color: var(--negro-fuerte);
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    margin-left: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.app-navbar-smallscreen-total-reservations {
+    width: 16px;
+    height: 16px;
+    background-color: var(--color-golden);
+    color: var(--negro-fuerte);
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: bold;
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-alt);
+
+}
+
+.app-navbar-smallscreen_links-total-reservations {
+    width: 16px;
+    height: 16px;
+    background-color: var(--color-golden);
+    color: var(--negro-fuerte);
+    border-radius: 50%;
+    font-size: 10px;
+    font-weight: bold;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-alt);
+    margin-left: 170px;
+}
+
+.p__opensans_reservaciones {
+    display: none;
+}
+
 .app__navbar-login a:hover {
     border-bottom: 1px solid var(--color-golden);
 }
@@ -124,6 +179,21 @@
 
     .app__navbar-login {
         display: none;
+    }
+
+    .app-navbar-total-reservations {
+        display: none;
+    }
+
+    .p__opensans_reservaciones {
+        display: flex;
+    }
+
+    
+    .app-navbar-smallscreen-total-reservations {
+        display: flex;
+        right: 3px;
+        top: 10px;
     }
 
     .app__navbar-logo img {
