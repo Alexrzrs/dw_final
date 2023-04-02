@@ -1,0 +1,10 @@
+@import "vars";
+
+.app__header-h1 {
+    font-family: var(--font-base);
+    color: var(--color-golden);
+    letter-spacing: 0.4em;
+    text-transform: uppercase;
+    line-height: 117px;
+    font-size: 50px;
+}

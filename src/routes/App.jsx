@@ -9,6 +9,7 @@ import "@styles/Global.css";
 import "@styles/App.css";
 import BuzonNo from "@pages/BuzonNo";
 import AcercaDe from "@pages/AcercaDe";
+
 import AppContext from "@context/AppContext";
 import useStatesGeneral from "@hooks/useStatesGeneral";
 import Reservaciones from "@pages/Reservaciones";
@@ -16,6 +17,7 @@ import Reservaciones from "@pages/Reservaciones";
 const App = () => {
     const statesGeneral = useStatesGeneral();
     return (
+
         <AppContext.Provider value={statesGeneral}>
             <BrowserRouter>
                 <Layout>
@@ -30,6 +32,9 @@ const App = () => {
                 </Layout>
             </BrowserRouter>
         </AppContext.Provider>
+
+        
+
     );
 };
 
