@@ -1,9 +1,9 @@
 import React from "react";
 import "@styles/NoEncontrado.scss";
-import cookiemstr from "@assets/cookiemnstr.png";
+import notfoundimg from "@assets/notfound.png";
 import nmbrfour from "@assets/number-four.png";
 import { useState, useEffect, useRef } from "react";
-import WAVES from "vanta/dist/vanta.waves.min";
+import CELLS from "vanta/dist/vanta.cells.min";
 
 const NoEncontrado = () => {
     const [vantaEffect, setVantaEffect] = useState(0);
@@ -11,18 +11,15 @@ const NoEncontrado = () => {
     useEffect(() => {
         if (!vantaEffect) {
             setVantaEffect(
-                WAVES({
+                CELLS({
                     el: vantaRef.current,
                     mouseControls: true,
                     touchControls: true,
                     gyroControls: false,
-                    minHeight: 200.0,
-                    minWidth: 200.0,
-                    scale: 1.0,
-                    scaleMobile: 1.0,
-                    color: 0x0,
-                    shininess: 84.0,
-                })
+                    minHeight: 200.00,
+                    minWidth: 200.00,
+                    scale: 1.00
+                  })
             );
         }
         return () => {
@@ -32,11 +29,10 @@ const NoEncontrado = () => {
     return (
         <div className="vanta" ref={vantaRef}>
             <div className="notfound-container">
+            <span className="numeros">44</span>
                 <div className="pagnoenc">
                     <h1>OOPS!!!</h1>
-                    <img className="number4" src={nmbrfour} />
-                    <img className="cookiemnstr" src={cookiemstr} />
-                    <img className="number4" src={nmbrfour} />
+                    <img className="cookiemnstr" src={notfoundimg} />
                     <p>
                         Has encontrado una pagina que no existe o el link fue
                         removido
