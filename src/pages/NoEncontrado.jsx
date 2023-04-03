@@ -19,7 +19,7 @@ const NoEncontrado = () => {
                     minHeight: 200.00,
                     minWidth: 200.00,
                     scale: 1.00
-                  })
+                })
             );
         }
         return () => {
@@ -29,15 +29,16 @@ const NoEncontrado = () => {
     return (
         <div className="vanta" ref={vantaRef}>
             <div className="notfound-container">
-            <span className="numeros">44</span>
+                <h1>OOPS!!!</h1>
                 <div className="pagnoenc">
-                    <h1>OOPS!!!</h1>
+                    <p>4</p>
                     <img className="cookiemnstr" src={notfoundimg} />
-                    <p>
-                        Has encontrado una pagina que no existe o el link fue
-                        removido
-                    </p>
+                    <p>4</p>
                 </div>
+                <p>
+                    Has encontrado una pagina que no existe o el link fue
+                    removido
+                </p>
             </div>
         </div>
     );
