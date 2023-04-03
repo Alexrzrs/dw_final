@@ -1,0 +1,17 @@
+@import 'vars';
+
+.characters-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    gap: 24px;
+    place-content: center;
+}
+
+@media (max-width: 640px) {
+    .characters-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 150px);
+        gap: 24px;
+        place-content: center;
+    }
+}
