@@ -1,0 +1,42 @@
+@import "vars";
+
+.characters {
+    margin-top: 20;
+}
+
+.characters-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    gap: 24px;
+    place-content: center;
+}
+
+.character-controls {
+    font-size: 25px;
+    height: 80px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.personajes_navigation {
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.personajes_navigation:hover {
+    color: var(--color-grey);
+}
+
+.character-controls p {
+    color: var(--color-white);
+}
+
+@media (max-width: 640px) {
+    .characters-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 150px);
+        gap: 24px;
+        place-content: center;
+    }
+}
