@@ -25,7 +25,7 @@ const Navbar = () => {
                     <a href="#Menu">Personajes</a>
                 </li>
                 <li className="p__opensans">
-                    <a href="#Contacto">Donde ver</a>
+                    <Link to="Plataformas">Donde ver</Link>
                 </li>
             </ul>
 
