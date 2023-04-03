@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import "@styles/Personajes.scss";
 import axios from "axios";
-import CharacterCard from "../components/CharacterCard";
 import { FaArrowCircleLeft, FaArrowCircleRight } from "react-icons/fa";
+import CharacterList from "@containers/CharacterList";
 
 const Personajes = () => {
     const [characters, setCharacters] = useState([]);
@@ -11,12 +11,16 @@ const Personajes = () => {
         "https://rickandmortyapi.com/api/character?page=1"
     );
 
-    useEffect(() => {
-        axios.get(page).then((res) => {
+    const getCharacters = async () => {
+        await axios.get(page).then((res) => {
             console.log(res.data);
             setCharacters(res.data.results);
             setInfo(res.data.info);
         });
+    }
+
+    useEffect(() => {
+        getCharacters()
     }, [page]);
 
     const handlePageChange = (url) => {
@@ -26,11 +30,7 @@ const Personajes = () => {
 
     return (
         <div className="characters">
-            <div className="characters-cards">
-                {characters.map((char) => (
-                    <CharacterCard char={char} key={char.id} />
-                ))}
-            </div>
+            <CharacterList characters={characters} />
             <div className="character-controls">
                 {info.prev ? (
                     <FaArrowCircleLeft
