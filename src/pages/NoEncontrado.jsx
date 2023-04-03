@@ -29,15 +29,13 @@ const NoEncontrado = () => {
     return (
         <div className="vanta" ref={vantaRef}>
             <div className="notfound-container">
-                <h1>OOPS!!!</h1>
                 <div className="pagnoenc">
                     <p>4</p>
                     <img className="cookiemnstr" src={notfoundimg} />
                     <p>4</p>
                 </div>
                 <p>
-                    Has encontrado una pagina que no existe o el link fue
-                    removido
+                    La pagina que estas buscando ha sido movida a otro universo
                 </p>
             </div>
         </div>
