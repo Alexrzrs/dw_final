@@ -9,6 +9,7 @@ import "@styles/Global.css";
 import "@styles/App.css";
 import BuzonNo from "@pages/BuzonNo";
 import AcercaDe from "@pages/AcercaDe";
+import Plataformas from "@pages/Plataformas";
 
 import AppContext from "@context/AppContext";
 import useStatesGeneral from "@hooks/useStatesGeneral";
@@ -17,7 +18,6 @@ import Reservaciones from "@pages/Reservaciones";
 const App = () => {
     const statesGeneral = useStatesGeneral();
     return (
-
         <AppContext.Provider value={statesGeneral}>
             <BrowserRouter>
                 <Layout>
@@ -28,13 +28,11 @@ const App = () => {
                         <Route path="/buzon_no" element={<BuzonNo />} />
                         <Route path="/acerca_de" element={<AcercaDe />} />
                         <Route path="/reservaciones" element={<Reservaciones/>} />
+                         <Route path='/plataformas' element={<Plataformas/>}/>
                     </Routes>
                 </Layout>
             </BrowserRouter>
         </AppContext.Provider>
-
-        
-
     );
 };
 

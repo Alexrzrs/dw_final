@@ -31,7 +31,7 @@ const Navbar = () => {
                     <Link to="personajes">Personajes</Link>
                 </li>
                 <li className="p__opensans">
-                    <a href="#Contacto">Donde ver</a>
+                    <Link to="Plataformas">Donde ver</Link>
                 </li>
             </ul>
 

@@ -1,0 +1,37 @@
+@import 'vars';
+
+.episode-card{
+    border: 0px solid;
+    background-color: var(--color-crimson);
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px -1px rgba(0, 0, 0,0.1);
+    justify-content: center;
+}
+
+.episode-info{
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+}
+
+.episode-info p {
+    font-size: 16px;
+    color: var(--black);
+    font-family: var(--font-alt);
+}
+
+.episode-info div p:nth-child(1) {
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.episode-info div p:nth-child(n+1) {
+    padding: 0px 20px 0px 20px;
+}
+
+
+@media (max-width: 640px) {
+    .episode-info p {
+        font-size: 12px;
+    }
+}
