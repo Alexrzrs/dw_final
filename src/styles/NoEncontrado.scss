@@ -36,6 +36,13 @@ p {
     font-size: 27px;
 }
 
+.notfoundtext{
+    display: inline-block;
+    background-color: var(--color-black);
+    border-radius: 20px;
+    padding: 5px 5px 5px 5px;
+}
+
 @media (max-width: 770px) {
     .cookiemnstr {
         width: 300px;

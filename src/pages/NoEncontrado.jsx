@@ -34,8 +34,8 @@ const NoEncontrado = () => {
                     <img className="cookiemnstr" src={notfoundimg} />
                     <p>4</p>
                 </div>
-                <p>
-                    La pagina que estas buscando ha sido movida a otro universo
+                <p className="notfoundtext">
+                   <strong>La pagina que estas buscando ha sido movida a otro universo</strong> 
                 </p>
             </div>
         </div>
