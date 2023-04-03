@@ -68,7 +68,7 @@ module.exports = {
     ],
     devServer: {
         historyApiFallback: true,
-        //host: '0.0.0.0',
-        //allowedHosts: ['localhost', '.gitpod.io'],
+        host: '0.0.0.0',
+        allowedHosts: ['localhost', '.gitpod.io'],
     },
 };

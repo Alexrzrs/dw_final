@@ -23,6 +23,7 @@ const Home = () => {
 
                 <h1 className="app__header-h1">
                     Viaja a dimensiones infinitas con Rick and Morty
+                    <br />
                     <button
                         type="button"
                         className="custom__button"
